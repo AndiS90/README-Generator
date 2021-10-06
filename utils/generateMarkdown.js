@@ -21,7 +21,7 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license, year, fullName) {
   switch (license) {
     case "MIT":
-return `## <span name="license"> License </span>
+return `## <span id="license"> License </span>
 
 <br>
 MIT License
@@ -46,8 +46,8 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE. `;
     
-    case "APACHE 2.0":
-return `## <span name="license"> License </span> 
+    case "APACHE_2.0":
+return `## <span id="license"> License </span> 
 
 <br>
 Copyright ${year} ${fullName}
@@ -64,8 +64,8 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License`;
 
-    case "GPL 3.0":
-return `## <span name="license"> License </span> 
+    case "GPL_3.0":
+return `## <span id="license"> License </span> 
 
 <br>
 Copyright (C) ${year} ${fullName}
@@ -84,7 +84,7 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.`;
 
       case "ISC":
-return `## <span name="license"> License </span>
+return `## <span id="license"> License </span>
 
 <br>
 ISC License

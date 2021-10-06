@@ -84,7 +84,7 @@ err ? console.log(err) : console.log('Successfully created README.md!')
 function init() {
   promptUser()
   // Use writeFileSync method to use promises instead of a callback function
-    .then((data) => writeToFile('README.md', data))
+    .then((data) => writeToFile('NEWREADME.md', data))
     // .then(() => console.log('Successfully wrote to index.html'))
     // .catch((err) => console.error(err));}
 };
