@@ -1,25 +1,17 @@
 # README-Generator
 
-  <br>
   
   ![Github license](https://img.shields.io/badge/License-MIT-blue.svg)
   
-  <br>
-  
+ 
   ## Description:
-  
-  <br>
-  
+ 
   Given the importance of having a quality README file for projects on GitHub this application seeks to make the creation of such files easier by asking the user a series of questions through the command line, and filling a page with the necessary content based off the user's input.
 
   Building this code required a core understanding of Node.js, the file system module, and the Inquirer package.
   
-  
-  <br>
-  
+
   ## Table of Contents
-  
-  <br>
   
   - [Installation](#installation) <br>
   - [Usage](#usage) <br>
@@ -28,8 +20,7 @@
   - [Contribute](#contributions) <br>
   - [Tests](#tests) <br>
   - [Questions](#questions) <br>
-  
-  <br>
+ 
   <br>
   
   ## <span id="installation"> Installation: </span>
@@ -39,13 +30,12 @@
 
   - If you don't have Node.js, you can install it [here](https://nodejs.org/en/download/).
 
-  -Once you're sure the above steps are completed, the dependencies (Inquirer and it's sub-dependencies) are easily installed by navigating to the project's local directory within your command line and entering the below code:
+  - Once you're sure the above steps are completed, the dependencies (Inquirer and it's sub-dependencies) are easily installed by navigating to the project's local directory within your command line and entering the below code:
 
 ```bash
 npm i
 ```
-
-  
+ 
   <br>
   
   ## <span id="usage"> Usage: </span>
@@ -65,11 +55,11 @@ node index.js
   
   - [Markdown Guide](https://www.markdownguide.org/basic-syntax/)
 
-  -[Node Docs](https://nodejs.org/en/docs/)
+  - [Node Docs](https://nodejs.org/en/docs/)
 
   - [Inquirer Docs](https://www.npmjs.com/package//inquirer#documentation)
 
-  -[Badge Creation](https://shields.io/)
+  - [Badge Creation](https://shields.io/)
   
   <br>
   
@@ -101,9 +91,8 @@ SOFTWARE.
   <br>
   
   ## <span id="contributions"> To Contribute: </span>
-  
-  <br>
-  
+ 
+
   - Fork this repo, create a branch and have fun with it!
 
   or
@@ -132,7 +121,6 @@ SOFTWARE.
   
   - [GitHub Profile](https://github.com/AndiS90)
   
-  <br>
   
   - [Email Me](andrea.strickland1990@gmail.com)
   
