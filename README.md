@@ -101,7 +101,7 @@ SOFTWARE.
 
   or
 
-  -[Make a Pull Request](https://github.com/AndiS90/README-Generator/pulls)
+  - [Make a Pull Request](https://github.com/AndiS90/README-Generator/pulls)
   
   <br>
   
