@@ -2,7 +2,7 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license !== 'None') {
-    return `![Github license](https://img.shields.io/badge/license-${license}-blue.svg)`;
+    return `![Github license](https://img.shields.io/badge/License-${license}-blue.svg)`;
   }
   return '';
 
@@ -21,7 +21,9 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license, year, fullName) {
   switch (license) {
     case "MIT":
-return `## <span name="license"> License </span><br>
+return `## <span name="license"> License </span>
+
+<br>
 MIT License
 
 Copyright (c) ${year} ${fullName}
@@ -45,7 +47,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE. `;
     
     case "APACHE 2.0":
-return `## <span name="license"> License </span> <br>
+return `## <span name="license"> License </span> 
+
+<br>
 Copyright ${year} ${fullName}
 
 Licensed under the Apache License, Version 2.0 (the "License");
@@ -61,7 +65,9 @@ See the License for the specific language governing permissions and
 limitations under the License`;
 
     case "GPL 3.0":
-return `## <span name="license"> License </span> <br>
+return `## <span name="license"> License </span> 
+
+<br>
 Copyright (C) ${year} ${fullName}
 
 This program is free software: you can redistribute it and/or modify
@@ -78,7 +84,9 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.`;
 
       case "ISC":
-return `## <span name="license"> License </span><br>
+return `## <span name="license"> License </span>
+
+<br>
 ISC License
 
 Copyright (c) ${year} ${fullName}
@@ -102,55 +110,89 @@ return '';
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-<br>
-${renderLicenseBadge(data.license)}
-<br>
-## Description:
-<br>
-${data.description}
-<br>
-## Table of Contents 
-<br>
-- [Installation](#installation) <br>
-- [Usage](#usage) <br>
-- [Credits](#credits <br>
-${renderLicenseLink(data.license)}
-- [Contribute](#contributions) <br>
-- [Tests](#tests) <br>
-- [Questions](#questions) <br>
 
-<br>
-<br>
-## <span id="installation">Installation</span>
-<br>
-- ${data.installation}
-<br>
-## <span id="usage"> Usage </span>
-<br>
-- ${data.usage}
-<br>  
-## <span id="credits"> Credits <span>
-<br>
-- ${data.credits}
-<br>
-${renderLicenseSection(data.license, data.year, data.fullName)}
-<br>
-## <span id="contributions"> To Contribute: </span>
-<br>
-- ${data.contribution}
-<br>
-## <span id="tests">Tests </span>
-<br>
--${data.tests}
-<br>
-## <span id="questions">Questions </span>
-<br>
--[${data.github}](https://github.com/${data.github})
-<br>
--[Email Me](${data.email})
-<br>
-
-`
+  <br>
+  
+  ${renderLicenseBadge(data.license)}
+  
+  <br>
+  
+  ## Description:
+  
+  <br>
+  
+  ${data.description}
+  
+  <br>
+  
+  ## Table of Contents
+  
+  <br>
+  
+  - [Installation](#installation) <br>
+  - [Usage](#usage) <br>
+  - [Credits](#credits) <br>
+  ${renderLicenseLink(data.license)}
+  - [Contribute](#contributions) <br>
+  - [Tests](#tests) <br>
+  - [Questions](#questions) <br>
+  
+  <br>
+  <br>
+  
+  ## <span id="installation"> Installation: </span>
+  <br>
+  
+  - ${data.installation}
+  
+  <br>
+  
+  ## <span id="usage"> Usage: </span>
+  <br>
+  
+  - ${data.usage}
+  
+  <br>  
+  
+  ## <span id="credits"> Credits: <span>
+  
+  <br>
+  
+  - ${data.credits}
+  
+  <br>
+  
+  ${renderLicenseSection(data.license, data.year, data.fullName)}
+  
+  <br>
+  
+  ## <span id="contributions"> To Contribute: </span>
+  
+  <br>
+  
+  - ${data.contribution}
+  
+  <br>
+  
+  ## <span id="tests"> Tests: </span>
+  
+  <br>
+  
+  - ${data.tests}
+  
+  <br>
+  
+  ## <span id="questions"> Questions: </span>
+  
+  <br>
+  
+  - [GitHub Profile](https://github.com/${data.github})
+  
+  <br>
+  
+  - [Email Me](${data.email})
+  
+  <br>`
 };
 
 module.exports = {generateMarkdown};
