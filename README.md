@@ -27,7 +27,7 @@
   <br>
 
 
-  [![IMAGE_ALT](https://img.youtube.com/vi/v=OIHmMYze404/maxresdefault.jpg)](https://www.youtube.com/watch?v=OIHmMYze404) 
+  [![IMAGE_ALT](https://img.youtube.com/vi/OIHmMYze404/maxresdefault.jpg)](https://www.youtube.com/watch?v=OIHmMYze404) 
   
   - Download the code via your preferred method, by clicking the green code button at the top of this page. 
 
